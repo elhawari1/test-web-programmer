@@ -22,14 +22,11 @@ class AuthController extends Controller
 
         $user = User::where('email', $credentials['email'])->first();
 
-    if ($user && $user->password === $credentials['password']) {
-        // Jika password cocok
-        Auth::login($user);
+        if (Auth::attempt($credentials)) {
 
-        $request->session()->regenerate();
-
-        return redirect()->intended('/');
-    }
+            $request->session()->regenerate();
+            return redirect()->intended('/');
+        }
 
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
