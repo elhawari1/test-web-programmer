@@ -1,0 +1,75 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.form-login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form-login-box {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img-side {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.login-form {
+    padding: 0;
+}
+
+.fa-bag-shopping {
+    color: #f13b2f;
+}
+
+.btn-masuk {
+    background-color: #f13b2f;
+}
+
+.text-masuk {
+    color: white;
+    font-weight: bold;
+}
+
+.form-input {
+    position: relative;
+}
+
+.form-input .fa-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.form-input input {
+    padding-left: 30px;
+}
+
+.form-input .fa-eye {
+    position: absolute;
+    right: 10px;
+    top: 54%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.form-input .fa-eye-slash {
+    position: absolute;
+    right: 10px;
+    top: 54%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
