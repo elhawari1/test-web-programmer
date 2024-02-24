@@ -20,11 +20,16 @@ class AuthController extends Controller
             'password' => ['required'],
         ]);
 
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
+        $user = User::where('email', $credentials['email'])->first();
 
-            return redirect()->intended('/');
-        }
+    if ($user && $user->password === $credentials['password']) {
+        // Jika password cocok
+        Auth::login($user);
+
+        $request->session()->regenerate();
+
+        return redirect()->intended('/');
+    }
 
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
