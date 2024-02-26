@@ -11,7 +11,8 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="{{ secure_asset('halaman_login') }}/asset/login.css">
+    <link rel="stylesheet" href="https://test-web-programmer-production.up.railway.app/halaman_login/asset/login.css">
+
 
 </head>
 
@@ -52,7 +53,7 @@
                 </div>
             </div>
             <div class="col-md-6 p-0">
-                <img src="{{ secure_asset('halaman_login/CMS Assets/Frame 98699.png') }}" alt="" class="img-side">
+                <img src="https://test-web-programmer-production.up.railway.app/halaman_login/CMS%20Assets/Frame%2098699.png" alt="" class="img-side">
 
             </div>
         </div>
