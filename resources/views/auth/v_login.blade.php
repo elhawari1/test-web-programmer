@@ -52,7 +52,8 @@
                 </div>
             </div>
             <div class="col-md-6 p-0">
-                <img src="{{ asset('halaman_login/CMS Assets/Frame 98699.png') }}" alt="" class="img-side">
+                <img src="{{ secure_asset('halaman_login/CMS Assets/Frame 98699.png') }}" alt="" class="img-side">
+
             </div>
         </div>
     </div>
